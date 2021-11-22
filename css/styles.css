@@ -133,6 +133,37 @@ Basic Layout
 Basic components
 =======================================================*/
 /*=======================================================
+  Button
+=======================================================*/
+
+.button {
+  min-width: 200px;
+  height: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--text-tertiary-color);
+
+  background-color: var(--accent-color);
+  border: 1px transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color var(--animation-duration)
+    var(--animation-timing-function);
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--background-button-focus);
+}
+
+/*=======================================================
   Socials icons
 =======================================================*/
 .socials {
@@ -302,33 +333,6 @@ Basic components
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--title-primary-color);
-}
-
-.hero-btn {
-  min-width: 200px;
-  height: 50px;
-  padding-right: 32px;
-  padding-left: 32px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--text-tertiary-color);
-
-  background-color: var(--accent-color);
-  border: 1px transparent;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  transition: background-color var(--animation-duration)
-    var(--animation-timing-function);
-  cursor: pointer;
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: var(--background-button-focus);
 }
 
 /*=======================================================
@@ -729,6 +733,54 @@ Basic components
 .footer-socials-link:hover,
 .footer-socials-link:focus {
   background-color: var(--accent-color);
+}
+
+.subscribe {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-tertiary-color);
+}
+
+.subscribe-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-input {
+  margin-top: 20px;
+  margin-right: 12px;
+  padding-left: 16px;
+  min-width: 358px;
+  height: 50px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: var(--background-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.subscribe-input:focus {
+  outline: 0;
+  border: 1px solid #2196f3;
+}
+
+.subscribe-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-icon {
+  margin-left: 10px;
 }
 
 /*=======================================================
