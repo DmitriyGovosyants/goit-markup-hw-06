@@ -853,12 +853,8 @@ Basic components
   text-align: center;
 }
 
-.callback-wrap {
-  margin-top: 12px;
-  margin-bottom: 20px;
-}
-
 .callback-title {
+  display: block;
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -878,6 +874,10 @@ Basic components
 
 .callback-field:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.callback-field:last-child {
+  margin-bottom: 20px;
 }
 
 .callback-label {
