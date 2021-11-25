@@ -968,7 +968,7 @@ Basic components
 .agreement-checkbox:checked + .agreement-icon {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
-  background-image: url('../images/Vector.svg');
+  background-image: url('../images/agreement-ok.svg');
   background-size: contain;
 }
 
