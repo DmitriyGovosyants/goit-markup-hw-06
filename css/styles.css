@@ -798,7 +798,8 @@ Basic components
 
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: opacity var(--animation-duration) var(--animation-timing-function);
+  transition: opacity var(--animation-duration) var(--animation-timing-function),
+    visibility var(--animation-duration) var(--animation-timing-function);
 }
 
 .is-hidden {
