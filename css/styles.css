@@ -748,13 +748,13 @@ Basic components
 .subscribe-email {
   display: flex;
   flex-direction: column;
+  margin-right: 12px;
 }
 
 .subscribe-input {
   min-width: 358px;
   height: 50px;
   margin-top: 20px;
-  margin-right: 12px;
   padding-left: 16px;
 
   font-size: 16px;
@@ -862,6 +862,9 @@ Basic components
 }
 
 .callback-title {
+  display: inline-block;
+  margin-bottom: 12px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -875,10 +878,6 @@ Basic components
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.callback-field:first-child {
-  margin-top: 12px;
 }
 
 .callback-field + .callback-field {
